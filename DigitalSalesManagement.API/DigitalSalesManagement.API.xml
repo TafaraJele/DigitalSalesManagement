@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DigitalSalesManagement.API</name>
+    </assembly>
+    <members>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.Create(DigitalSalesManagement.Abstractions.Models.AgentWrite)">
+            <summary>
+            creates agent's record
+            </summary>
+            <param name="agent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.UpdateAgent(DigitalSalesManagement.Abstractions.Models.AgentWrite)">
+            <summary>
+            updates agents details
+            </summary>
+            <param name="agent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.CalculateAgentCommission(DigitalSalesManagement.Abstractions.Models.AgentCommissionFee)">
+            <summary>
+            
+            </summary>
+            <param name="agent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.DeleteAgent(System.Guid)">
+            <summary>
+            removes agent record
+            </summary>
+            <param name="agentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.VerifyAgent(System.String)">
+            <summary>
+            verify agent's existence by agent code
+            </summary>
+            <param name="agentCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.GetAgents">
+            <summary>
+            get all agent records
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.GetAgentSales(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            get all agent sales
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.GetAgentDashboards(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            get agent dashboard
+            </summary>
+            <param name="agentId"></param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.CreateAgentCommissionApproval(DigitalSalesManagement.Abstractions.Models.AgentCommissionApproval)">
+            <summary>
+            agent commission approval
+            </summary>
+            <param name="agent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.ApproveAllAgentCommissionApproval(System.Collections.Generic.List{DigitalSalesManagement.Abstractions.Models.AgentCommissionApproval})">
+            <summary>
+            approve a list of commission approvals
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.UpdateAgentCommissionApproval(DigitalSalesManagement.Abstractions.Models.AgentCommissionApproval)">
+            <summary>
+            agent commission approval
+            </summary>
+            <param name="agent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.GetAgentAprroval(System.String,System.String)">
+            <summary>
+            check agent approval status
+            </summary>
+            <param name="agentId"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.AgentsController.GetTotalAgentEarnedCommission(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            get total earned commsions per agent for approval
+            </summary>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.CommissionsController.Create(DigitalSalesManagement.Abstractions.Models.CommisionPlan)">
+            <summary>
+            creates a commission plan
+            </summary>
+            <param name="plan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.CommissionsController.UpdateCommissionPlan(DigitalSalesManagement.Abstractions.Models.CommisionPlan)">
+            <summary>
+            updates a commision plan
+            </summary>
+            <param name="plan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.CommissionsController.DeleteCommissionPlan(System.Guid)">
+            <summary>
+            removes commision plan details
+            </summary>
+            <param name="planId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.CommissionsController.GetProductCommisionPlans(System.Int32)">
+            <summary>
+            gets commission plans for a product
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.CommissionsController.GetCommisionPlans">
+            <summary>
+            gets all commission plans
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.CommissionsController.CreateAgentCommission(DigitalSalesManagement.Abstractions.Models.AgentCommission)">
+            <summary>
+            assign commission plan to agent
+            </summary>
+            <param name="commission"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.CommissionsController.AgentCommission(System.Guid)">
+            <summary>
+            remove commission plan assignment from agent
+            </summary>
+            <param name="agentCommissionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.CommissionsController.GetAgentCommissions(System.Guid)">
+            <summary>
+            get agents assigned commission plans
+            </summary>
+            <param name="agentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.CommissionsController.GetAgentPaidCommissions(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            get an agents paid commissions 
+            </summary>
+            <param name="agentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.CommissionsController.GetAgentUnpaidCommissions(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            get an agents unpaid commissions 
+            </summary>
+            <param name="agentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.CommissionsController.RecalculateAgentCommissions(System.Guid,System.DateTime,System.DateTime)">
+            <summary>
+            rerun an agents schedule
+            </summary>
+            <param name="commissions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.CommissionsController.RerunCommissionSchedule(System.Collections.Generic.List{System.Guid},System.DateTime,System.DateTime)">
+            <summary>
+            redo commission shedules
+            </summary>
+            <param name="commissions"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DigitalSalesManagement.API.Controllers.ReportsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.ReportsController.#ctor(Microsoft.Extensions.Logging.ILogger{DigitalSalesManagement.API.Controllers.ReportsController},DigitalSalesManagement.Abstractions.Services.IDigitialSalesApplication)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="application"></param>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.ReportsController.GetSalesReports(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.Guid})">
+            <summary>
+            get sales reports
+            </summary>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <param name="productId"></param>
+            <param name="agentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.ReportsController.GetSalesDashboard(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            get sales dashboard
+            </summary>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.ReportsController.GetEarnedCommissions(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            get earned commissions
+            </summary>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.ReportsController.GetPaidCommissions(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            get paid commissions
+            </summary>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.ReportsController.GetUnpaidCommissions(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            get unpaid commissions
+            </summary>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DigitalSalesManagement.API.Controllers.ReportsController.GetUnprocessedCommissions(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            get unprocessed commission
+            </summary>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="10.1.1" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.9" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="3.1.9" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="Serilog.Sinks.RollingFile" Version="3.1.0" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="3.1.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\DigitalSalesManagement.Abstractions\DigitalSalesManagement.Abstractions.csproj" />
+	</ItemGroup>
+
+
+</Project>

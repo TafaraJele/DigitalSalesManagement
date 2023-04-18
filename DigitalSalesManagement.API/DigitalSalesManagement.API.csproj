@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>DigitalSalesManagement.API.xml</DocumentationFile>
+  </PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="10.1.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+		<PackageReference Include="Autofac" Version="6.0.0" />
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.0.2" />
+		<PackageReference Include="AutoMapper" Version="10.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.14">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Serilog" Version="2.10.0" />
+		<PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+		<PackageReference Include="Serilog.Exceptions" Version="5.6.0" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+		<PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+		<PackageReference Include="Serilog.Sinks.RollingFile" Version="3.1.0" />
+		<PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="3.1.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+		<PackageReference Include="System.ServiceModel.Duplex" Version="4.7.*" />
+		<PackageReference Include="System.ServiceModel.Http" Version="4.7.*" />
+		<PackageReference Include="System.ServiceModel.NetTcp" Version="4.7.*" />
+		<PackageReference Include="System.ServiceModel.Security" Version="4.7.*" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DigitalSalesManagement.Abstractions\DigitalSalesManagement.Abstractions.csproj" />
+    <ProjectReference Include="..\DigitalSalesManagement.Core\DigitalSalesManagement.Core.csproj" />
+    <ProjectReference Include="..\DigitalSalesManagement.Infrastructure\DigitalSalesManagement.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DigitalSalesManagement.API.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
